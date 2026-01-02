@@ -1,0 +1,144 @@
+/* font chữ chung */
+* {
+    box-sizing: border-box; /* để padding và border không làm thay đổi kích thước phần tử */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;  /* khoảng cách dòng */
+}
+
+/*đầu tiên là banner trường*/
+.banner-chinh {
+    position: relative; /* để lớp phủ ảnh */
+    width: 100%;
+    height: 40vh; /* vh là độ dài của màn hình */
+    background-image: url('/image/anhtruong.jpg');
+    background-size: cover;  /*cover để phủ toàn bộ */
+    background-position: center; /*để vị trí ảnh ở chính giữa*/
+    display: flex; /* linh hoạt chuyển đổi*/
+    justify-content: center;    /* đặt thành phần theo chiều ngang*/
+    align-items: center;   /*căn giữa*/
+    text-align: center;  /*chữ căn giữa*/
+}
+
+/* phủ mờ ảnh */
+.phu-mo-anh {
+    position: absolute; /* đặt lớp phủ tuyệt đối */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+/* định dạng chữ cho banner */
+.banner-phu {
+    position: relative; /* Để nằm trên lớp phủ */
+    z-index: 1;   /*chồng lên 1 lớp */
+    color: #fff;
+}
+
+.banner-phu h1 {
+    font-size: 65px;
+    text-transform: uppercase; /* chữ in hoa */
+    font-weight: 700; /* in đậm */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.banner-phu p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+/* slogann  */
+.slogan-phan-tu {
+    text-align: center; /* căn giữa */
+    padding: 60px 20px; 
+}
+
+.slogan-phan-tu h2 {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-style: italic; /* chữ in nghiêng */
+}
+
+/* các câu lạc bộ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.club-chu {
+    display: flex;   /* Sử dụng flexbox để sắp xếp ảnh và thông tin */
+    align-items: center;  /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Khoảng cách giữa ảnh và thông tin */
+    margin-bottom: 80px; /* Khoảng cách giữa các CLB */
+    background: #fff; /* nền trắng cho mỗi khối */
+}
+
+/* đảo ngược vị trí cho bóng chuyền, ziczaccc */
+.club-chu.reverse { 
+    flex-direction: row-reverse; /* Đảo ngược thứ tự hiển thị */
+}
+
+.club-thong-tin {
+    width: 45%; 
+    padding: 40px; 
+}
+
+.club-thong-tin h3 {
+    font-size: 32px; 
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.club-thong-tin p {
+    font-size: 1.1rem; /* Kích thước chữ dễ đọc */
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Nút Tìm hiểu thêm  */
+.button {
+    padding: 12px 30px; /* Khoảng cách bên trong nút */
+    background-color: #00ce26;
+    color: #fff; 
+    text-decoration: none; /* bỏ gạch chân */
+    font-weight: bold; /* in đậm */
+    border-radius: 5px;
+}
+
+/* Phần Ảnh CLB */
+.club-anh {
+    width: 55%; /* Ảnh chiếm 55% chiều ngang */
+    height: px; /* Chiều cao cố định để ảnh đều nhau */
+}
+
+.club-anh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy khung mà không bị méo */
+    display: block;
+}
+
+/* làm chân trang */
+.chantrang {
+    background-color: #000;
+    color: #fff;
+    text-align: center; /* căn giữa */
+    padding: 40px 20px; /* khoảng cách bên trong */
+}
+
+.chantrang h3 {
+    margin-bottom: 20px; /* khoảng cách dưới */
+    text-transform: uppercase; /* chữ in hoa */
+    letter-spacing: 2px;
+}
+
+.chantrang p {
+    margin-bottom: 10px; /* khoảng cách dưới */
+    color: #ccc;
+}
+/*note: đã xong trang index*/

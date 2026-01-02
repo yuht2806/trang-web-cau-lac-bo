@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto; 
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #7a17eb;
+    padding-bottom: 10px;
+}
+
+/* labeo */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* loại kí tự nhập */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff0000; /* cái này đổi viền khi ấn (focus) */
+    outline: none;
+}
+
+/* kiểu của nhóm lựa chọn (field) */
+fieldset {
+    border: 2px solid #ddd;     
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #750392;
+    padding: 0 10px;
+    font-size: 1.1em;
+}
+
+.club-option {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.club-option input[type="checkbox"] {
+    width: auto; /* giới hạn chiều rọng box option */
+    margin-right: 10px;
+}
+
+button[type="submit"] {    /* nút đki*/
+    background-color: #f86502d3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
