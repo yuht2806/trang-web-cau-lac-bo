@@ -14,7 +14,7 @@ body {
     position: relative; /* để lớp phủ ảnh */
     width: 100%;
     height: 40vh; /* vh là độ dài của màn hình */
-    background-image: url('/image/anhtruong.jpg');
+    background-image: url('anhtruong.jpg');
     background-size: cover;  /*cover để phủ toàn bộ */
     background-position: center; /*để vị trí ảnh ở chính giữa*/
     display: flex; /* linh hoạt chuyển đổi*/
@@ -142,3 +142,4 @@ body {
     color: #ccc;
 }
 /*note: đã xong trang index*/
+
